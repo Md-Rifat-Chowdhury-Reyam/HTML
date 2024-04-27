@@ -38,6 +38,23 @@
                              "<br> Longitude: " +position.coords.longitude;
             }
 
+            // with error handling
+
+            function showError (error)
+            {
+                switch(error.code)
+                {
+                    case error.permisionDenied:
+                        c.innerHTML= "user denied"
+                    break;
+                    
+                    case error.positionnUnavailable:
+                        c.innerHTML="information unavailable"
+                        break;
+
+                }
+            }
+
 
         </script>
 
