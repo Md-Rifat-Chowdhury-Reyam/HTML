@@ -34,11 +34,14 @@
 <script>
     var c2= document.getElementById("canvas2");
     var ctx2=c2.getContext("2d");
-    ctx2.moveTo(0,0);
-    ctx2.lineTo(100,100);
+    ctx2.beginPath();
+    ctx2.arc(50,50,30,0,2*Math.PI);
     ctx2.stroke();
 
 </script>
+
+
+    
 
     </body>
 </html>
